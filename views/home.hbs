@@ -1,0 +1,15 @@
+{{> welcome}}
+ 
+{{#if author}}
+  <h2>Hello, {{firstName}} {{lastName}}!</h2>
+{{/if}}
+ 
+{{#unless license}}
+  <p style="color:red;">WARNING: This entry does not have a license!</p>
+{{/unless}}
+ 
+<p>Using custom helper (calculation): {{calculation 5}}</p>
+ 
+{{#strong}}
+  This text is strong!
+{{/strong}}
